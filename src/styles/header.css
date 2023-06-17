@@ -1,0 +1,54 @@
+header {
+    width: 80vw;
+    height: 10vh;
+    margin: 0 auto 5vh;
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    color: grey;
+}
+.h-t {
+    display: inline;
+    margin-left: 15px;
+}
+.log,
+.btn-log {
+    display: inline;
+}
+.btn-log {
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    float: right;
+}
+.login > button {
+    margin-top: calc((10vh - 40px) / 2);
+}
+.h-t,
+.log {
+    line-height: 10vh;
+}
+.logo {
+    margin-top: calc((10vh - 33px) / 2);
+}
+.h-t:hover,
+.log:hover {
+    cursor: pointer;
+    color: black;
+}
+.btn-log:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+    .mobile-logo {
+        justify-self: end;
+        align-self: center;
+    }
+}

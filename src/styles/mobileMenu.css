@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+    .mobile-menu {
+        height: 60vh;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+    }
+    .menu {
+        width: 60%;
+        height: 90%;
+        margin: 0 auto;
+        background-color: rgb(56, 48, 81);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    .h-t,
+    .log,
+    .btn-log {
+        display: block;
+        margin: 0 auto;
+    }
+    .btn-log {
+        float: none;
+    }
+    hr {
+        color: grey;
+    }
+}

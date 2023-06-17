@@ -1,0 +1,97 @@
+footer {
+    width: 100vw;
+    height: 70vh;
+}
+.first-footer {
+    height: 30vh;
+    background-image: url('../../public/images/bg-boost-desktop.svg');
+    background-size: cover;
+    background-color: rgb(56, 48, 81);
+    text-align: center;
+    display: flex;
+}
+.fr-foo {
+    height: fit-content;
+    margin: auto;
+}
+.second-footer {
+    height: 40vh;
+    background-color: rgb(35, 32, 39);
+    display: grid;
+    grid-template-columns: 25% 45% 30%;
+}
+h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 42px;
+}
+.btn-footer {
+    color: white;
+    font-size: 22px;
+    background-color: hsl(180, 66%, 49%);
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+}
+.btn-footer:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.footer-logo,
+.footer-descriptions,
+.contacts {
+    padding-top: 10vh;
+}
+.footer-logo {
+    justify-self: center;
+}
+.contacts-logo {
+    margin-right: 20px;
+}
+.footer-descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+h5 {
+    color: white;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.text-footer {
+    color: gray;
+    padding-bottom: 10px;
+}
+.text-footer:hover {
+    cursor: pointer;
+    color: hsl(180, 66%, 49%);
+}
+.contacts > svg {
+    fill: white;
+}
+.contacts > svg:hover {
+    cursor: pointer;
+    fill: hsl(180, 66%, 49%);
+}
+@media (max-width: 767px) {
+    footer {
+        height: 200vh;
+    }
+    .first-footer {
+        height: 50vh;
+    }
+    .second-footer {
+        height: 150vh;
+        grid-template-columns: none;
+        grid-template-rows: 15vh 1fr 15vh;
+    }
+    .contacts {
+        padding: 0;
+        text-align: center;
+    }
+    .footer-descriptions {
+        grid-template-columns: none;
+    }
+}

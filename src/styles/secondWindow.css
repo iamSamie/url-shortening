@@ -1,0 +1,93 @@
+.second {
+    min-height: 100vh;
+    background-color: rgb(234, 234, 234);
+    margin-top: 10vh;
+    padding-bottom: 25vh;
+}
+.sw-text {
+    width: 25vw;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10vh;
+    color: hsl(261, 61%, 24%);
+}
+.sw-text-desc {
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: grey;
+}
+
+.details {
+    width: 80vw;
+    margin: 15vh auto 7vh;
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr 30px 1fr;
+    height: 250px;
+}
+.gap {
+    height: 10px;
+    background-color: hsl(180, 66%, 49%);
+    align-self: center;
+}
+.round {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 35px;
+    background-color: hsl(257, 27%, 26%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 30px;
+}
+.cart-one,
+.cart-two,
+.cart-three {
+    padding: 0 20px 20px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+.cart-two {
+    position: relative;
+    top: 35px;
+}
+.cart-three {
+    position: relative;
+    top: 70px;
+}
+h3 {
+    /* margin-top: 20px; */
+    font-size: 22px;
+    color: hsl(261, 64%, 18%);
+}
+.cart-text {
+    color: grey;
+    margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+    .sw-text {
+        width: 80%;
+    }
+    .details {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 30px 1fr 30px 1fr;
+        text-align: center;
+        height: 130vh;
+    }
+    .gap {
+        /* height: 100%; */
+        /* width: 10px; */
+        /* justify-self: center; */
+        background-color: rgb(234, 234, 234);
+    }
+    .round {
+        left: calc(50% - 35px);
+    }
+}
